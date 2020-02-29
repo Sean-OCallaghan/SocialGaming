@@ -14,6 +14,7 @@ footer {
 
 .body{
   background-color: #222;
+  overflow-x: hidden;
 }
 
 
@@ -59,9 +60,6 @@ footer {
 
 
 
-* {
-  box-sizing: border-box;
-}
 
 html {
   font-family: Sans-Serif;
@@ -69,24 +67,9 @@ html {
   
 }
 
-.u-visually-hidden {
-  position: absolute;
-  -webkit-transform: translateX(9999px);
-          transform: translateX(9999px);
-}
 
-.o-button {
-  padding: 10px 10px;
-}
-.o-button--float-left {
-  float: left;
-}
-.o-button--full-width {
-  width: 100%;
-}
-.o-button--half-width {
-  width: 50%;
-}
+
+
 .o-card {
   margin: 20px auto;
   
@@ -94,30 +77,15 @@ html {
 .o-card--mod-small {
   max-width: 400px;
 }
-.o-card--mod-medium {
-  max-width: 600px;
+.c-card:hover{
+  transform: scale(1.1);
 }
-.o-card--mod-large {
-  max-width: 800px;
-}
-
-.c-button {
-  background-color: rgba(32, 125, 226, 0);
-  border: solid 1px #207de2;
-}
-.c-button:hover {
-  background-color: #207de2;
-  color: white;
-}
-.c-button--full-width {
-  width: 100%;
-}
-
 .c-card {
   border-radius: 10px;
   box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.75);
   position: relative;
   padding: 10px;
+  transition: transform .2s;
 }
 .c-card_body {
   padding: 20px;
@@ -138,63 +106,10 @@ html {
 .c-card_text {
   font-size: 1em;
 }
-.c-card_expand-button {
-  border: 0;
-  width: 100%;
-  text-align: center;
-  color: white;
-  padding: 5px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background-color: grey;
-}
-.c-card_expand-block {
-  padding: 0 20px;
-  height: 0px;
-  overflow: hidden;
-}
-.c-card_expand-block-image {
-  width: 100%;
-  margin-bottom: 10px;
-}
-.c-card_expanded-block {
-  height: auto;
-}
 
 
 
 
-.collapsible {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #ccc;
-}
 
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
 
-.footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
-}
