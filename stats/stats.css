@@ -1,11 +1,200 @@
 .jumbotron{
-    background-image: linear-gradient(red, yellow);
-
+    background-image: linear-gradient(#4caf50,black);
+    text-align: left;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 300px;
+}
+footer {
+  display: block;
+}
+.lead{
+  text-align: left;
 }
 
 .body{
-
-  background-color: blue;
-
+  background-color: #222;
 }
 
+
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-2:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card-3:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card-4:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-2 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.card-3 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card-4 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-5 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Sans-Serif;
+ 
+  
+}
+
+.u-visually-hidden {
+  position: absolute;
+  -webkit-transform: translateX(9999px);
+          transform: translateX(9999px);
+}
+
+.o-button {
+  padding: 10px 10px;
+}
+.o-button--float-left {
+  float: left;
+}
+.o-button--full-width {
+  width: 100%;
+}
+.o-button--half-width {
+  width: 50%;
+}
+.o-card {
+  margin: 20px auto;
+  
+}
+.o-card--mod-small {
+  max-width: 400px;
+}
+.o-card--mod-medium {
+  max-width: 600px;
+}
+.o-card--mod-large {
+  max-width: 800px;
+}
+
+.c-button {
+  background-color: rgba(32, 125, 226, 0);
+  border: solid 1px #207de2;
+}
+.c-button:hover {
+  background-color: #207de2;
+  color: white;
+}
+.c-button--full-width {
+  width: 100%;
+}
+
+.c-card {
+  border-radius: 10px;
+  box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.75);
+  position: relative;
+  padding: 10px;
+}
+.c-card_body {
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+.c-card_image {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 100%;
+}
+.c-card_title {
+  font-size: 1.75em;
+}
+.c-card_secondary-title {
+  font-size: 1.25em;
+}
+.c-card_text {
+  font-size: 1em;
+}
+.c-card_expand-button {
+  border: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: grey;
+}
+.c-card_expand-block {
+  padding: 0 20px;
+  height: 0px;
+  overflow: hidden;
+}
+.c-card_expand-block-image {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.c-card_expanded-block {
+  height: auto;
+}
+
+
+
+
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
