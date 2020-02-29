@@ -6,78 +6,127 @@
     <title>Gamer Site</title> 
     <link rel= "stylesheet" href="home.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
     <style>
       body {
-        background-color: #333;
+        background-color: #222;
         margin: 0px;
-        padding: 0px;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
       }
-      .navbar-brand {
-        background-color: #333;
-        
+      .container{
+        width:80%;
+        margin: 0 auto;
       }
-      ul{
-        list-style-type: none;
-        margin: 0;
-        position:fixed;
-        top:0;
-        width: 100%;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
+      header{
+        background: #222;
+        position: relative;
       }
-      li{
-        float: left;
+      header::after{
+        content: '';
+        display: table;
+        clear: both;
+      }
+      .logo{
+        position: absolute;
+        left: 10px;
+        border-radius: 100%;
+        padding: 10px 0;
       }
       nav{
-          margin:0;
-          padding:0;
+        float: right;
       }
-      li a {
-        display: block;
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      nav li{
+        display: inline-block;
+        margin-left: 70px;
+        padding-top: 23px;
+        position: relative;
+      }
+      nav a{
         color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration:none;
       }
-      li a:hover:not(.active){
-        background-color: #111;
+      nav a:hover{
+        color: #4caf50;
         text-decoration: none;
+
       }
-      .active{
+      nav a::before{
+        content:'';
+        display: block;
+        height: 2px;
+        width: 100%;
         background-color: #4caf50;
+        position: absolute;
+        top:0;
+        width:0%;
+        transition: all ease-in-out 250ms;
       }
-      p{
-        font-family: Consolas;
+      nav a:hover::before{
+        width: 100%;
+      }
+      .lead{
+        text-align: center;
+        font-family: Oswald;
+        font-size: 24px;
+      }
+      .lead2{
+        text-align: center;
+      }
+      .lead3{
+        color: white;
+      }
+      .lead3 h3{
+        text-align: center;
+        font-family: Oswald;
+        font-size: 35px;
+      }
+      .lead3 p{
+        text-align: center;
+      }
+      .links a{
         text-align: center;
       }
     </style>
   </head> 
 
 <body>
-    
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Gaming Social</a>
-    <div class="collapse navbar-collapse" id="navbarNav">
+  <header>
+    <div class="container">
+      <a href="/home/home.html">
+        <img src = "Gameshack (1).png" alt="logo" class="logo"width="120 px" height="120 px">
+      </a>
+      <nav>
       <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#communities">Communitites</a></li>
-        <li><a href="#socialpage">Social Page</a></li>
-        <li><a href="#stats">Stats</a></li>
+        <li><a href="/community/community.html">Communities</a></li>
+        <li><a href="/social/social.html">Social Page</a></li>
+        <li><a href="/stats/stats.html">Stats</a></li>
       </ul>
-    </div>
   </nav>
-
+  </div>
+</header>
+<div class="container">
   <div class="jumbotron">
         <h1 class="display-4"></h1>
         <p class="lead">The best place to talk about games and everything gamer
         </p>
         <hr class="my-4">
-        <p>(Website Title) is a social environment for passionate gamers. Talk and post about a game, show off your recent accomplishments, create  challenges on the Social Page for people to view. Game on!
+        <p>GameShack is a social environment for passionate gamers. Talk and post about a game, show off your recent accomplishments, create  challenges on the Social Page for people to view. Game on!
         </p>
         <p class="lead">
-         
         </p>
   </div>
+  <div class="lead3">
+    <h3>See what people have posted about your favorite games.</h3>
+    <p>View other people's accomplishments from all over the world or post your own.</p>
+  </div>
+  <div class="links"> 
+    <a href="/community/community.html">Join a community</a>
+  </div>
+</div>
 </body>
 </html>
