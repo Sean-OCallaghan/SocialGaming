@@ -1,0 +1,14 @@
+.jumbotron{
+    background-image: linear-gradient(red, yellow);
+
+}
+
+.body{
+
+  background-color: blue;
+
+}
+
+.navbar{
+    background-image: linear-gradient(green, black); 
+}
