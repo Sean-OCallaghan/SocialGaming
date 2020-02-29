@@ -1,0 +1,13 @@
+
+
+.display-4{
+    background-color:green;
+}
+
+.games{
+    width: 200px;
+    height: 200px;
+    float:left;
+    margin: 4px;
+    background-position: center;
+}
