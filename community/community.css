@@ -1,0 +1,37 @@
+.display-4{
+    background-color:green;
+}
+
+.column{
+    margin: auto;
+}
+.row{
+   
+    left: 50px;
+}
+.fortnite img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+
+}
+
+.r6 img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    
+}
+
+.league img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}
+
+.tarkov img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    
+}
