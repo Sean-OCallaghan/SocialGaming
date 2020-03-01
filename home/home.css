@@ -1,3 +1,110 @@
-.body {
-    background-color: lightblue;
+.body{
+    background-color: #222;
+}
+
+
+.bportal{
+    position: relative;
+    bottom: 400px;
+    right:-30px;
+    width: 400px;
+    height: 400px;
+}
+
+.oportal{
+    position: relative;
+    bottom: 910px;
+    right: -1100px;
+    width:400px;
+    height:400px;
+}
+
+.dot {
+    position: relative;
+    right: -540px;
+    bottom: -10px;
+    height: 425px;
+    width: 425px;
+    background-image: linear-gradient(#4caf50,#222);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot2 {
+    position: relative;
+    right: -125px;
+    bottom: 3px;
+    height: 400px;
+    width: 400px;
+    background-color: #222;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .badges{
+      position: relative;
+      bottom: 350px;
+      right: -25px;
+    height: 275px;
+    width: 275px;
+    border-radius: 75%;
+  }
+  .middle:hover .badges{
+    opacity: 50%;
+
+}
+
+.fortnite:hover .fortnitelogo{
+    filter: grayscale(0%);
+    opacity: 100%; 
+}
+
+  .trophies{
+    position: relative;
+    bottom: 400px;
+    height: 200px;
+    width: 200px;
+    border-radius: 75%;
+}
+.orange:hover .trophies{
+    opacity: 50%;
+
+}
+
+.bg{
+    position: relative;
+    bottom: 400px;
+    right: 274px;
+    height: 200px;
+    width: 200px;
+    border-radius: 75%;
+}
+
+.blue:hover .bg{
+    opacity: 50%;
+
+}
+
+.join{
+    position: relative;
+    right: 320px;
+    bottom: 400px;
+    width: 300px;
+    height: 300px;
+}
+
+.page{
+    position: relative;
+    right: 90px;
+    bottom: 350px;
+    width: 300px;
+    height: 300px;
+}
+
+.badges{
+    position: relative;
+    right: -635px;
+    bottom: 830px;
+    width: 600px;
+    height: 600px;
 }
