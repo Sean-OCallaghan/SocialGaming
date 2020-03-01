@@ -5,33 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="social.css" rel="stylesheet">
+    <script src="social.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 
 
-<body>
- <div class="jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4"><font size = 7>Social Feed</font></h1>
+<body style="background-color:#333;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Gaming Social</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="/community/community.html">Communitites</a></li>
+        <li><a href="/social/social.html">Social Page</a></li>
+        <li><a href="/stats/stats.html">Stats</a></li>
+      </ul>
     </div>
-  </div>
+  </nav>
+  <div class="row">
+    <div class="col-sm-6">
+    <div class="card" style="width: 23rem; height: 30rem; margin-right:19rem">
+      <div class="card-body">
+        <article class="photo">
+          <div style="width:100%; text-align:center">
+             <img src="rsz_2rsz_kev.jpg">
+          </div>
+        <h5 class="card-title text-center">Username: $user</h5>
+        <p class="card-text text-align"> Bio:</p>
+        <h6>Game tag: $user</h6>
+        <h6>Clan: $clan</h6>
+        <h6>Slogan: $slog</h6>
+        <button onclick="document.location = 'Userinfo.html'">Update Info</button>
 
-  <div class="card w-50">
+      </div>
+      <div class="card" style="width: 45rem; height: 20rem; margin-left:450px; margin-bottom:100px" >
+        <div class="card-body">
+          <img src="rsz_3rsz_kev.jpg" />
+          <h5 class="card-title text-left">Username</h5>
+          <h5 class="card-subtitle mb-2 text-muted text-center">Title of Post</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+  <div class="card" style="width: 45rem; height: 20rem; margin-left: 537px;" >
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Button</a>
+      <img src="rsz_3rsz_kev.jpg" />
+      <h5 class="card-title text-left">Username</h5>
+      <h5 class="card-subtitle mb-2 text-muted text-center">Title of Post</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     </div>
   </div>
-  
-  <div class="card w-50">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Button</a>
-    </div>
-  </div>
-
 </body>
 </html>
