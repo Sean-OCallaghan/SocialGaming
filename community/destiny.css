@@ -1,0 +1,254 @@
+.jumbotron{
+    background-image: url(/community/destiny2banner.jpg);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 300px;
+  }
+  
+  .body{
+    background-color: #222;
+    overflow-x: hidden;
+  }
+  
+  
+  
+  header{
+    background: #222;
+  }
+  header::after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .logo{
+    left: 10px;
+    float: left;
+    border-radius: 75%;
+    padding: 10px 0;
+    width:100px;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .navbar{
+    float: right;
+  }
+  nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    position: relative;
+  }
+  nav a{
+    color: white;
+  }
+  nav ul a:hover{
+    color: #4caf50;
+    text-decoration: none;
+  
+  }
+  nav ul a::before{
+    content:'';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #4caf50;
+    position: absolute;
+    top:0;
+    width:0%;
+    transition: all ease-in-out 250ms;
+  }
+  nav ul a:hover::before{
+    width: 100%;
+  }
+  
+  
+  .display-4 img{
+    position: relative;
+    right: -600px;
+    height: 200px;
+    width: 400px;
+  }
+  
+  .card {
+    text-align: center;
+    margin-left: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 15%;
+    border-radius: 5px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  
+  .container {
+    padding: 2px 16px;
+  }
+  
+  .card2 {
+    bottom:340px;
+    right:100px;
+    position: relative;
+    text-align: center;
+    margin-left: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 60%;
+    border-radius: 5px;
+  }
+  
+  .card2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+
+  
+  .container2 {
+    position: relative;
+    bottom: -40px;
+    padding: 2px 16px;
+  }
+
+  .container3{
+      position: relative;
+      bottom: -90px;
+  }
+  
+  .container4{
+    margin-right: 10px;
+    position: relative;
+    text-align: right;
+    bottom: -120px;
+  }
+
+  .upvote img{
+      position: relative;
+      filter: grayscale();
+      left:-370px;
+      bottom:100px;
+      width:50px;
+      height:50px;
+  }
+
+  .downvote img{
+    position: relative;
+    filter: grayscale();
+    left:-370px;
+    bottom:70px;
+    width:50px;
+    height:50px;
+}
+
+.upvote img:hover{
+    filter: grayscale(0%);
+}
+
+.downvote img:hover{
+    filter:grayscale(0%);
+}
+
+.playstation img{
+    position: relative;
+    right: -350px;
+    bottom:70px;
+    width:50px;
+    height:50x;
+}
+.card3 {
+    position: relative;
+    top: -650px;
+    right: -1350px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 15%;
+    border-radius: 5px;
+  }
+
+  .card4 {
+    position: relative;
+    bottom: 500px;
+    text-align: center;
+    margin-left: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 15%;
+    border-radius: 5px;
+  }
+
+  .card5 {
+    position: relative;
+    bottom: 950px;
+    right: -1330px;
+    text-align: center;
+    margin-left: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 15%;
+    border-radius: 5px;
+  }
+
+  .xbox img{
+    position: relative;
+    right: -350px;
+    bottom:70px;
+    width:50px;
+    height:50x;
+}
+
+.card6 {
+    bottom:1140px;
+    right:100px;
+    position: relative;
+    text-align: center;
+    margin-left: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 60%;
+    border-radius: 5px;
+  }
+
+  .container6 {
+    position: relative;
+    bottom: -40px;
+    padding: 2px 16px;
+  }
+
+  .container7{
+      position: relative;
+      bottom: -90px;
+  }
+  
+  .container8{
+    margin-right: 10px;
+    position: relative;
+    text-align: right;
+    bottom: -130px;
+  }
+
+  .card7 {
+    position: relative;
+    bottom: 1225px;
+    right: -1330px;
+    text-align: center;
+    margin-left: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 15%;
+    border-radius: 5px;
+  }
+
+  .card9 {
+    position: relative;
+    bottom: 500px;
+    text-align: center;
+    margin-left: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 15%;
+    border-radius: 5px;
+  }

@@ -4,34 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="social.css" rel="stylesheet">
+  <link href="social.css" rel="stylesheet">
+</head>
+<script src="social.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</head>
 
 
-<body>
- <div class="jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4"><font size = 7>Social Feed</font></h1>
+
+
+<body style="background-color:#333;">
+  <header class = "head" style = "background-color: #333;">
+    <a class="navbar-brand" href="/home/home.html"><img src = "/home/Gameshack (1).png" alt="logo" class="logo"width="120 px" height="120 px"></a>
+      </button>
+    <nav class="navbar navbar-expand-lg">
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/community/community.html">Communities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/social/social.html">Social Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/stats/stats.html">Stats</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/login/login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="jumbotron big-banner" style = "height: 500px;">
+    <img src="rsz_2rsz_kev.jpg"  id = "pppic"/><h1>Kavin Raj</h1>
+
+  </div>
+  <div class="row">
+    <div class="col">
+    <div id = "card-2"class="card bg-dark text-white border-success mb-3" style="width: 23rem; height: 30rem; margin-right:19rem">
+      <div class="card-body">
+        <article class="photo">
+          <div style="width:100%; text-align:center">
+            <img class = "Profile-Picture" src="rsz_3rsz_kev.jpg" align="center" />
+          </div>
+          <h5 align = "center">Bio</h5>
+          <h6>Username: TheTrollboss</h6>
+          <h6>Games: Overwatch, Destiny 2, Team Fortress 2, Minecraft 2, Rainbow Six Seige</h6>
+          <h6>Clan: SUCS, Boss, Tremblegaming</h6>
+          <h6 align = "center">-Personal Contact-</h6>
+          <h6>Email: kavingaming@gmail.com</h6>
+          <h6>Phone number: (408) 894-9432</h6>
+      </div>
     </div>
   </div>
-
-  <div class="card w-50">
+  <div class = "col">
+      <div id = "card-1" class="card bg-dark text-white border-success mb-3" style="width: 45rem; height: 15rem; margin-left:0px; margin-bottom:100px" >
+        <div class="card-body">
+          <img src="rsz_3rsz_kev.jpg" />
+          <h5 class="card-title text-left">#Hashtag</h5>
+          <h5 class="card-subtitle mb-2 text-muted text-center">What is on your mind today...</h5>
+          <form>
+            <input type="textarea" align = "center" /><br>
+            <input type = "button" value = "Submit"/>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id = "card-1"class="card bg-dark text-white border-success mb-3" style="width: 45rem; height: 20rem; margin-left: 700px" >
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Button</a>
+      <img src="rsz_3rsz_kev.jpg" />
+      <h5 class="card-title text-left">#filthygoober420</h5>
+      <h5 class="card-subtitle mb-2 text-muted text-center">My experience with GTA V</h5>
+      <p class="card-text text-left">For a game that is almost 8 years old, GTA V still has many content 
+        that a verteran or a beginner would enjoy. The graphics haven't aged at all and it still looks 
+        amazing to this day. Rumors about GTA VI seem to be going around but I strongly believe GTA V won't
+       be replaced in a really long time.</p>
     </div>
   </div>
-  
-  <div class="card w-50">
+  <div class="card bg-dark text-white border-success mb-3" style="width: 45rem; height: 20rem; margin-left: 700px;" >
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Button</a>
+      <img src="rsz_3rsz_kev.jpg" />
+      <h5 class="card-title text-left">#Sean_eats_a carrot_XD</h5>
+      <h5 class="card-subtitle mb-2 text-muted text-center">My clan: SUccess through CS (SUCS)</h5>
+      <p class="card-text text-left">Destiny 2 clan aspiring to reach power level 999. Looking for members who have meta weapons: recluse,
+         izanagi's burden, Randy's throwing knife, etc.</p>
     </div>
   </div>
-
 </body>
 </html>

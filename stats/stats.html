@@ -11,45 +11,87 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
+    <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-firestore.js"></script>
 
 
 
+   
+
+
+</head>
 <body class="body">
 
+    <header>
+        <div class="container">
+          <a href="/home/home.html">
+            <img src = "/home/Gameshack (1).png" alt="logo" class="logo"width="120 px" height="120 px">
+          </a>
+          <nav>
+        <div class ="text"> 
+          <ul>
+            <li><a href="/community/community.html">Communities</a></li>
+            <li><a href="/social/social.html">Social Page</a></li>
+            <li><a href="/stats/stats.html">Stats</a></li>
+            <li><a href="/login/login.html">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+      </div>
+    </header>
+   
+    
+
     <div class="jumbotron">
-        <h1 class="display-4">Cards</h1>
-        <p class="lead">Update your Cards</p>
+        <h1 class="display-4">Badges</h1>
+        <p class="lead">This is the dashboard for your cards to display all of your accomplishments</p>
     </div>
 
 
 
       
-
+    
 
   <div class="container">
     <div class="row">
-      <div class="col-sm">
+      <div class="col-lg">
         <div class="o-card o-card--mod-small">
             <div class="c-card">
-              <legend class="u-visually-hidden">Destiny 2</legend>
+              
               <img class="c-card_image" src="destiny.jpg" alt="Card Image">
               <div class="c-card_body">
                 <h2 class="c-card_title">Destiny</h2>
                 <h5 class="c-card_secondary-title">FPS MMO</h5>
                 <hr>
-                <p class="c-card_text">
-                  My Favorite Game
-                </p>
-                <div class="container">
-                    <div class="row">
-                      <div class="col">Flawless Runs</div>
-                      <div class="col">Raids Completed</div>
-                      <div class="w-50"></div>
-                      <div class="col">Highest Light</div>
-                      <div class="col">Fastest Raid</div>
+                <div class="content">
+
+                    <form id="add-card-form">
+                        <input type="text" name="name" placeholder="Accomplishment">
+                        <input type="text" name="city" placeholder="Description">
+                        <button id="submit">Add</button>
+                    </form>
+        
+                    <ul class = "fireList" id="stat-list"></ul>
+        
+                </div>
+                
+                <div class="stats-card__unit-stats stats-card__unit-stats--barbarian clearfix">
+                    <div class="one-third">
+                      <div class="stat" id="raid">512</div>
+                      <div class="stat-value" >Raids Completed</div>
                     </div>
-                  </div>
+            
+                    <div class="one-third">
+                      <div class="stat" id="trials">15</div>
+                      <div class="stat-value">Flawless Runs Ran</div>
+                    </div>
+            
+                    <div class="one-third no-border">
+                      <span class="stat" id="riven">2342</span>
+                      <div class="stat-value">Riven Cheesed</div>
+                    </div>
+            
+             </div> 
              </div> 
     </div>
     </div>
@@ -58,24 +100,39 @@
       <div class="col-sm">
         <div class="o-card o-card--mod-small">
             <div class="c-card">
-              <legend class="u-visually-hidden">Destiny 2</legend>
-              <img class="c-card_image" src="destiny.jpg" alt="Card Image">
+              <img class="c-card_image" src="callofduty.jpg" alt="Card Image">
               <div class="c-card_body">
-                <h2 class="c-card_title">Destiny</h2>
-                <h5 class="c-card_secondary-title">FPS MMO</h5>
+                <h2 class="c-card_title">Call of Duty</h2>
+                <h5 class="c-card_secondary-title">FPS</h5>
                 <hr>
-                <p class="c-card_text">
-                  My Favorite Game
-                </p>
-                <div class="container">
-                    <div class="row">
-                      <div class="col">Flawless Runs</div>
-                      <div class="col">Raids Completed</div>
-                      <div class="w-50"></div>
-                      <div class="col">Highest Light</div>
-                      <div class="col">Fastest Raid</div>
+                <div class="content">
+
+                    <form id="call-add-card-form">
+                        <input type="text" name="name" placeholder="Accomplishment">
+                        <input type="text" name="city" placeholder="Description">
+                        <button id="submit">Add</button>
+                    </form>
+        
+                    <ul class = "fireList" id="call-stat-list"></ul>
+        
+                </div>
+                <div class="stats-card__unit-stats stats-card__unit-stats--barbarian clearfix">
+                    <div class="one-third">
+                      <div class="stat">1023</div>
+                      <div class="stat-value">Matches Won</div>
                     </div>
-                  </div>
+            
+                    <div class="one-third">
+                      <div class="stat">9.2</div>
+                      <div class="stat-value">K/D</div>
+                    </div>
+            
+                    <div class="one-third no-border">
+                      <div class="stat">1002</div>
+                      <div class="stat-value">Hours Played</div>
+                    </div>
+            
+             </div> 
              </div> 
     </div>
     </div>
@@ -84,24 +141,38 @@
       <div class="col-sm">
         <div class="o-card o-card--mod-small">
             <div class="c-card">
-              <legend class="u-visually-hidden">Destiny 2</legend>
-              <img class="c-card_image" src="destiny.jpg" alt="Card Image">
+              <img class="c-card_image" src="smash.jpg" alt="Card Image">
               <div class="c-card_body">
-                <h2 class="c-card_title">Destiny</h2>
-                <h5 class="c-card_secondary-title">FPS MMO</h5>
+                <h2 class="c-card_title">Smash Ultimate</h2>
+                <h5 class="c-card_secondary-title">Fighting</h5>
                 <hr>
-                <p class="c-card_text">
-                  My Favorite Game
-                </p>
-                <div class="container">
-                    <div class="row">
-                      <div class="col">Flawless Runs</div>
-                      <div class="col">Raids Completed</div>
-                      <div class="w-50"></div>
-                      <div class="col">Highest Light</div>
-                      <div class="col">Fastest Raid</div>
+                <div class="content">
+
+                    <form id="add-card-form">
+                        <input type="text" name="name" placeholder="Accomplishment">
+                        <input type="text" name="city" placeholder="Description">
+                        <button id="submit">Add</button>
+                    </form>
+        
+                    <ul class = "fireList" id="stat-list"></ul>
+        
+                </div>
+                <div class="stats-card__unit-stats stats-card__unit-stats--barbarian clearfix">
+                    <div class="one-third">
+                      <div class="stat">512</div>
+                      <div class="stat-value">Matches Won</div>
                     </div>
-                  </div>
+            
+                    <div class="one-third">
+                      <div class="stat">1312</div>
+                      <div class="stat-value">B button Mashed</div>
+                    </div>
+            
+                    <div class="one-third no-border">
+                      <div class="stat">3000</div>
+                      <div class="stat-value">Hours Played</div>
+                    </div>
+            
              </div> 
     </div>
     </div>
@@ -116,24 +187,39 @@
       <div class="col-sm">
         <div class="o-card o-card--mod-small">
             <div class="c-card">
-              <legend class="u-visually-hidden">Destiny 2</legend>
-              <img class="c-card_image" src="destiny.jpg" alt="Card Image">
+              <img class="c-card_image" src="fortnite.png" alt="Card Image">
               <div class="c-card_body">
-                <h2 class="c-card_title">Destiny</h2>
-                <h5 class="c-card_secondary-title">FPS MMO</h5>
+                <h2 class="c-card_title">Fortnite</h2>
+                <h5 class="c-card_secondary-title">Battle Royal</h5>
                 <hr>
-                <p class="c-card_text">
-                  My Favorite Game
-                </p>
-                <div class="container">
-                    <div class="row">
-                      <div class="col">Flawless Runs</div>
-                      <div class="col">Raids Completed</div>
-                      <div class="w-50"></div>
-                      <div class="col">Highest Light</div>
-                      <div class="col">Fastest Raid</div>
+                <div class="content">
+
+                    <form id="add-card-form">
+                        <input type="text" name="name" placeholder="Accomplishment">
+                        <input type="text" name="city" placeholder="Description">
+                        <button id="submit">Add</button>
+                    </form>
+        
+                    <ul class = "fireList" id="stat-list"></ul>
+        
+                </div>
+                <div class="stats-card__unit-stats stats-card__unit-stats--barbarian clearfix">
+                    <div class="one-third">
+                      <div class="stat">1</div>
+                      <div class="stat-value">Victory Royal</div>
                     </div>
-                  </div>
+            
+                    <div class="one-third">
+                      <div class="stat">18</div>
+                      <div class="stat-value">Highest Kill Game</div>
+                    </div>
+            
+                    <div class="one-third no-border">
+                      <div class="stat">201</div>
+                      <div class="stat-value">Hours Played</div>
+                    </div>
+            
+             </div> 
              </div> 
     </div>
     </div>
@@ -142,24 +228,39 @@
       <div class="col-sm">
         <div class="o-card o-card--mod-small">
             <div class="c-card">
-              <legend class="u-visually-hidden">Destiny 2</legend>
-              <img class="c-card_image" src="destiny.jpg" alt="Card Image">
+              <img class="c-card_image" src="lol.jpg" alt="Card Image">
               <div class="c-card_body">
-                <h2 class="c-card_title">Destiny</h2>
-                <h5 class="c-card_secondary-title">FPS MMO</h5>
+                <h2 class="c-card_title">League of Legends</h2>
+                <h5 class="c-card_secondary-title">MMO</h5>
                 <hr>
-                <p class="c-card_text">
-                  My Favorite Game
-                </p>
-                <div class="container">
-                    <div class="row">
-                      <div class="col">Flawless Runs</div>
-                      <div class="col">Raids Completed</div>
-                      <div class="w-50"></div>
-                      <div class="col">Highest Light</div>
-                      <div class="col">Fastest Raid</div>
+                <div class="content">
+
+                    <form id="add-card-form">
+                        <input type="text" name="name" placeholder="Accomplishment">
+                        <input type="text" name="city" placeholder="Description">
+                        <button id="submit">Add</button>
+                    </form>
+        
+                    <ul class = "fireList" id="stat-list"></ul>
+        
+                </div>
+                <div class="stats-card__unit-stats stats-card__unit-stats--barbarian clearfix">
+                    <div class="one-third">
+                      <div class="stat">312</div>
+                      <div class="stat-value">Matches Won</div>
                     </div>
-                  </div>
+            
+                    <div class="one-third">
+                      <div class="stat">1000</div>
+                      <div class="stat-value">Left Mouse Clicked</div>
+                    </div>
+            
+                    <div class="one-third no-border">
+                      <div class="stat">203</div>
+                      <div class="stat-value">Hours Played</div>
+                    </div>
+            
+             </div> 
              </div> 
     </div>
     </div>
@@ -168,24 +269,40 @@
       <div class="col-sm">
         <div class="o-card o-card--mod-small">
             <div class="c-card">
-              <legend class="u-visually-hidden">Destiny 2</legend>
-              <img class="c-card_image" src="destiny.jpg" alt="Card Image">
+              <img class="c-card_image" src="six.jpg" alt="Card Image">
               <div class="c-card_body">
-                <h2 class="c-card_title">Destiny</h2>
-                <h5 class="c-card_secondary-title">FPS MMO</h5>
+                <h2 class="c-card_title">Rainbow Six Siege</h2>
+                <h5 class="c-card_secondary-title">FPS </h5>
                 <hr>
-                <p class="c-card_text">
-                  My Favorite Game
-                </p>
-                <div class="container">
-                    <div class="row">
-                      <div class="col">Flawless Runs</div>
-                      <div class="col">Raids Completed</div>
-                      <div class="w-50"></div>
-                      <div class="col">Highest Light</div>
-                      <div class="col">Fastest Raid</div>
+                <div class="content">
+
+                    <form id="add-card-form">
+                        <input type="text" name="name" placeholder="Accomplishment">
+                        <input type="text" name="city" placeholder="Description">
+                        <button id="submit">Add</button>
+                    </form>
+        
+                    <ul class = "fireList" id="stat-list"></ul>
+        
+                </div>
+                <div class="stats-card__unit-stats stats-card__unit-stats--barbarian clearfix">
+                    
+                    <div class="one-third">
+                      <div class="stat">Gold</div>
+                      <div class="stat-value">Ranked</div>
                     </div>
-                  </div>
+            
+                    <div class="one-third">
+                      <div class="stat">1312</div>
+                      <div class="stat-value">B button Mashed</div>
+                    </div>
+            
+                    <div class="one-third no-border">
+                      <div class="stat">2013</div>
+                      <div class="stat-value">Hours Played</div>
+                    </div>
+            
+             </div> 
              </div> 
     </div>
     </div>
@@ -193,5 +310,14 @@
       </div>
     </div>
   </div>
+
+
+
+
+
+  
+
+
+<script src="stats.js"></script>
 </body>
   </html>

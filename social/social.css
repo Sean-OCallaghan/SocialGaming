@@ -1,16 +1,128 @@
-.jumbotron-fluid{
-    background-color:purple;
-   height: 50px;
 
+.nav-item{
+  bottom: 6px;
+  position: relative;
+}
+.big-banner{
+  background-image: url('bruh.jpg');
+  background-size:100%;
+  text-align: left;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 300px;
 }
 .display-4{
-    color: white;
-    font-family: "Times New Roman", Times, serif;
-    size: 2px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;    
+    size: 5px;
     position: relative;
-    bottom: 11px;
-    text-align: left;
+    bottom: 3px;
+    text-align: Left;
 }
-.card w-50{
-    
-}           
+.lead{
+    color:white;
+    text-align:Left;
+}
+body {
+    background-color: #333;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+}
+  ul{
+    list-style-type: none;
+    margin: 0;
+    position:fixed;
+    top:0;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  li{
+    float: left;
+  }
+
+  body {
+    font-family: Arial;
+    background: #f1f1f1;
+  }
+  .card {
+    color: #23272a;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-top: 60px; /* Added */
+    border-radius: 50%;
+    left:75px;
+    style: "background-color:#23272a";
+}
+.card-body{
+  
+}
+.card:hover{
+  position: relativ;
+  transform: scale(1.1);
+}
+img{
+        border-radius: 50%;
+    }
+.card-title{
+    padding: 6px, 5px;
+}
+.Profile-Picture {
+    max-width:50%;
+    max-height:50%;
+  }
+  .exuser{
+    margin-bottom: 30px;
+  }
+
+  .row{
+    margin:auto;
+    float: left;
+  }
+  .logo{
+    left: 10px;
+    float: left;
+    border-radius: 75%;
+    padding: 10px 0;
+    width:100px;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .navbar{
+    float: right;
+  }
+  nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    position: relative;
+  }
+  nav a{
+    color: white;
+  }
+  nav ul a:hover{
+    color: #4caf50;
+    text-decoration: none;
+
+  }
+  nav ul a::before{
+    content:'';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #4caf50;
+    position: absolute;
+    top:0;
+    width:0%;
+    transition: all ease-in-out 250ms;
+  }
+  nav ul a:hover::before{
+    width: 100%;
+  }
+ 
