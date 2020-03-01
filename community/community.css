@@ -7,6 +7,11 @@
     font-size: 300px;
 }
 
+.textbox{
+    text-align: center;
+    color: white;
+}
+
 .body{
     background-color: #222;
     overflow-x: hidden;
@@ -17,6 +22,7 @@
 }
 .fort{
     position: relative;
+    bottom: 200px;
     left: 40px;
     filter: grayscale();
     transition: .5s ease-in-out;
@@ -27,6 +33,7 @@
 
 .fortnitelogo{
     position: relative;
+    bottom: 200px;
     opacity: 0;
     left: -165px;
     height: 200px;
@@ -35,6 +42,7 @@
 
 .r6logo{
     position: relative;
+    bottom: 200px;
     opacity: 0;
     right: 200px;
     height: 100px;
@@ -42,6 +50,8 @@
 }
 
 .rainbow{
+    position: relative;
+    bottom: 200px;
     filter: grayscale();
     transition: .5s ease-in-out;
     height: 200px;
@@ -50,8 +60,10 @@
 }
 
 .lol{
+    position: relative;
     filter: grayscale();
     transition: .5s ease-in-out;
+    bottom: 200px;
     height: 200px;
     width: 200px;
     border-radius: 75%;
@@ -59,6 +71,7 @@
 
 .lollogo{
     position: relative;
+    bottom:200px;
     opacity: 0;
     right: 200px;
     height: 100px;
@@ -66,6 +79,8 @@
 }
 
 .destiny{
+    position: relative;
+    bottom: 200px;
     filter: grayscale();
     transition: .5s ease-in-out;
     height: 200px;
@@ -75,9 +90,10 @@
 
 .destinylogo{
     position: relative;
+    bottom: 200px;
     opacity: 0;
-    left:-205px;
-    bottom: 0px;
+    left:1225px;
+    bottom: 345px;
     height: 100px;
     width: 210px;
 }
@@ -134,7 +150,7 @@
 .dot {
     position: relative;
     right: -27px;
-    bottom: -220px;
+    bottom: -20px;
     height: 225px;
     width: 225px;
     background-image: linear-gradient(#4caf50,#222);
@@ -145,7 +161,7 @@
   .dot2 {
     position: relative;
     right: -167px;
-    bottom: -220px;
+    bottom: -20px;
     height: 225px;
     width: 225px;
     background-image: linear-gradient(#4caf50,#222);
@@ -156,7 +172,7 @@
   .dot3 {
     position: relative;
     right: -345px;
-    bottom: -220px;
+    bottom: -20px;
     height: 225px;
     width: 225px;
     background-image: linear-gradient(#4caf50,#222);
@@ -167,7 +183,7 @@
   .dot4 {
     position: relative;
     right: -525px;
-    bottom: -220px;
+    bottom: -20px;
     height: 225px;
     width: 225px;
     background-image: linear-gradient(#4caf50,#222);
@@ -179,7 +195,7 @@
   .dot5 {
     position: relative;
     right: 890px;
-    bottom: -550px;
+    bottom: -350px;
     height: 225px;
     width: 225px;
     background-image: linear-gradient(#4caf50,#222);
@@ -190,7 +206,7 @@
   .dot6 {
     position: relative;
     right: 750px;
-    bottom: -550px;
+    bottom: -350px;
     height: 225px;
     width: 225px;
     background-image: linear-gradient(#4caf50,#222);
@@ -201,7 +217,7 @@
   .dot7 {
     position: relative;
     right: 168px;
-    bottom: -550px;
+    bottom: -350px;
     height: 225px;
     width: 225px;
     background-image: linear-gradient(#4caf50,#222);
@@ -211,7 +227,7 @@
   .dot8 {
     position: relative;
     right: -800px;
-    bottom: -120px;
+    bottom: 185px;
     height: 225px;
     width: 225px;
     background-image: linear-gradient(#4caf50,#222);
@@ -222,7 +238,7 @@
   .dot9 {
     position: relative;
     right: -27px;
-    bottom: -102px;
+    bottom: 300px;
     height: 225px;
     width: 225px;
     background-image: linear-gradient(#4caf50,#222);
@@ -233,7 +249,7 @@
   .dot10 {
     position: relative;
     right: -156px;
-    bottom: -100px;
+    bottom: 300px;
     height: 225px;
     width: 225px;
     background-image: linear-gradient(#4caf50,#222);
@@ -244,7 +260,7 @@
   .dot11 {
     position: relative;
     right: -336px;
-    bottom: -100px;
+    bottom: 300px;
     height: 225px;
     width: 225px;
     background-image: linear-gradient(#4caf50,#222);
@@ -254,7 +270,7 @@
   .dot12 {
     position: relative;
     right: -535px;
-    bottom: -100px;
+    bottom: 300px;
     height: 225px;
     width: 225px;
     background-image: linear-gradient(#4caf50,#222);
@@ -265,7 +281,7 @@
 
   .gta{
     position: relative;
-    bottom: 100px;
+    bottom: 405px;
     left: 40px;
     filter: grayscale();
     transition: .5s ease-in-out;
@@ -276,7 +292,7 @@
 
 .gtalogo{
     position: relative;
-    bottom:100px;
+    bottom:405px;
     opacity: 0;
     left: -140px;
     height: 150px;
@@ -297,7 +313,7 @@
 
 .smash{
     position: relative;
-    bottom:100px;
+    bottom:405px;
     left: 50px;
     filter: grayscale();
     transition: .5s ease-in-out;
@@ -308,7 +324,7 @@
 
 .smashlogo{
     position: relative;
-    bottom:100px;
+    bottom:405px;
     opacity: 0;
     left: -145px;
     height: 100px;
@@ -329,7 +345,7 @@
 
 .rocket{
     position: relative;
-    bottom:100px;
+    bottom:405px;
     left: 75px;
     filter: grayscale();
     transition: .5s ease-in-out;
@@ -340,7 +356,7 @@
 
 .rocketlogo{
     position: relative;
-    bottom: 90px;
+    bottom: 405px;
     opacity: 0;
     left: -105px;
     height: 125px;
@@ -359,7 +375,7 @@
 
 .modern{
     position: relative;
-    bottom:100px;
+    bottom:405px;
     left: 125px;
     filter: grayscale();
     transition: .5s ease-in-out;
@@ -370,7 +386,7 @@
 
 .modernlogo{
     position: relative;
-    bottom: 100px;
+    bottom: 405px;
     opacity: 0;
     left: -80px;
     height: 150px;
@@ -396,7 +412,7 @@
 
 .ark{
     position: relative;
-    top: -120px;
+    top: -520px;
     left: 40px;
     filter: grayscale();
     transition: .5s ease-in-out;
@@ -407,7 +423,7 @@
 
 .arklogo{
     position: relative;
-    bottom: 115px;
+    bottom: 520px;
     opacity: 0;
     left: -140px;
     height: 150px;
@@ -428,7 +444,7 @@
 
 .stardew{
     position: relative;
-    top:-120px;
+    top:-520px;
     left: 40px;
     filter: grayscale();
     transition: .5s ease-in-out;
@@ -439,7 +455,7 @@
 
 .stardewlogo{
     position: relative;
-    bottom: 120px;
+    bottom: 520px;
     opacity: 0;
     left: -155px;
     height: 100px;
@@ -460,7 +476,7 @@
 
 .pokemon{
     position: relative;
-    top: -120px;
+    top: -520px;
     left: 70px;
     filter: grayscale();
     transition: .5s ease-in-out;
@@ -471,7 +487,7 @@
 
 .pokemonlogo{
     position: relative;
-    bottom: 125px;
+    bottom: 520px;
     opacity: 0;
     left: -115px;
     height: 150px;
@@ -492,7 +508,7 @@
 
 .animal{
     position: relative;
-    top:-120px;
+    top:-520px;
     left: 140px;
     filter: grayscale();
     transition: .5s ease-in-out;
@@ -503,7 +519,7 @@
 
 .animallogo{
     position: relative;
-    bottom:120px;
+    bottom:520px;
     opacity: 0;
     left: -65px;
     height: 150px;
