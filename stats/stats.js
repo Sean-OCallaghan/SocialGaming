@@ -25,35 +25,42 @@ function renderCard(doc) {
     li.setAttribute('data-id', doc.id);
     name.textContent = doc.data().name;
     city.textContent = doc.data().city;
-
+    console.log(doc.data().name)
     li.appendChild(name);
     li.appendChild(city);
 
     cafeList.appendChild(li);
 }
 
-// saving data
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    let data = {
+    
+
+   
+   
+
+    db.collection('card').doc("496LlVzIhp91oekAQN7q").set({
+        
         id: "teest",
-        statCard: [{
+ 
             name: form.name.value,
             city: form.city.value
-        }]
-    }
 
-    // doc get
-    // data.statCard.append()
-
-    console.log(data)
-
-    db.collection('card').doc(data.id).set(data.statCard);
-
-     // loop
-        // renderCard(data.statCard[i]);
+    });
+    
+    db.collection('card').doc('496LlVzIhp91oekAQN7q').get().then(doc => {
+            renderCard(doc);
+    
+    });
+      
+  
+         
 
     form.name.value = '';
     form.city.value = '';
 });
+
+  
+         
