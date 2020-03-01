@@ -15,15 +15,14 @@
     text-align: Center;
 }
 .lead{
-    color:white:
+    color:white;
 }
 body {
     background-color: #333;
     margin: 0px;
     padding: 0px;
   }
-  .navbar-brand {
-    background-color: #333;
+  
     
   }
   ul{
@@ -39,10 +38,7 @@ body {
   li{
     float: left;
   }
-  nav{
-      margin:0;
-      padding:0;
-  }
+  
   li a {
     display: block;
     color: white;
@@ -92,6 +88,8 @@ img{
   .card-body{
     border-color:red;
   }
+
+
   #card 1 {
     margin: 0 auto; /* Added */
     float: left; /* Added */
@@ -103,7 +101,7 @@ img{
     box-shadow: 14px 28px rgba(44,100,44);
     
   }
-  #card 2 {
+  #card 2{
     margin: 0 auto; /* Added */
     float: left; /* Added */
     margin-top: 60px; /* Added */
@@ -119,3 +117,57 @@ img{
     float: left;
   }
   
+
+
+  header{
+    background: #222;
+    position: relative;
+  }
+  header::after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .logo{
+    left: 10px;
+    float: left;
+    border-radius: 75%;
+    padding: 10px 0;
+    width:100px;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .navbar{
+    float: right;
+  }
+  nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    position: relative;
+  }
+  nav a{
+    color: white;
+  }
+  nav ul a:hover{
+    color: #4caf50;
+    text-decoration: none;
+
+  }
+  nav ul a::before{
+    content:'';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #4caf50;
+    position: absolute;
+    top:0;
+    width:0%;
+    transition: all ease-in-out 250ms;
+  }
+  nav ul a:hover::before{
+    width: 100%;
+  }
