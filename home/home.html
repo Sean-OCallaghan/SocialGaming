@@ -14,9 +14,16 @@
         font-family: "Work Sans", sans-serif;
         font-weight: 400;
       }
+      .navbar-brand{
+        float:left;
+      }
       .container{
         width:80%;
         margin: 0 auto;
+        padding-top: 120px;
+      }
+      .container .jumbotron{
+        border-radius: 10px;
       }
       header{
         background: #222;
@@ -30,16 +37,18 @@
       .logo{
         position: absolute;
         left: 10px;
-        border-radius: 100%;
+        float: left;
+        border-radius: 75%;
         padding: 10px 0;
-      }
-      nav{
-        float: right;
+        width:100px;
       }
       nav ul {
         margin: 0;
         padding: 0;
         list-style: none;
+      }
+      .navbar{
+        float: right;
       }
       nav li{
         display: inline-block;
@@ -50,12 +59,12 @@
       nav a{
         color: white;
       }
-      nav a:hover{
+      nav ul a:hover{
         color: #4caf50;
         text-decoration: none;
 
       }
-      nav a::before{
+      nav ul a::before{
         content:'';
         display: block;
         height: 2px;
@@ -66,13 +75,13 @@
         width:0%;
         transition: all ease-in-out 250ms;
       }
-      nav a:hover::before{
+      nav ul a:hover::before{
         width: 100%;
       }
       .lead{
         text-align: center;
         font-family: Oswald;
-        font-size: 24px;
+        font-size: 35px;
       }
       .lead2{
         text-align: center;
@@ -88,27 +97,44 @@
       .lead3 p{
         text-align: center;
       }
-      .links a{
+      .text li{
+        font-size: 20px;
+      }
+      .links{
+        margin: 20px;
+        display: block;
+        width: 120px;
+      }
+      .my-4{
+        text-align: center;
+      }
+      .container .a{
         text-align: center;
       }
     </style>
   </head> 
+<heading>
+  <a class="navbar-brand" href="/home/home.html"><img src = "Gameshack (1).png" alt="logo" class="logo"width="120 px" height="120 px"></a>
+    </button>
+  <nav class="navbar navbar-expand-lg">
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/community/community.html">Communities</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/social/social.html">Social Page</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/stats/stats.html">Stats</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</heading>
 
 <body>
-  <header>
-    <div class="container">
-      <a href="/home/home.html">
-        <img src = "Gameshack (1).png" alt="logo" class="logo"width="120 px" height="120 px">
-      </a>
-      <nav>
-      <ul>
-        <li><a href="/community/community.html">Communities</a></li>
-        <li><a href="/social/social.html">Social Page</a></li>
-        <li><a href="/stats/stats.html">Stats</a></li>
-      </ul>
-  </nav>
-  </div>
-</header>
 <div class="container">
   <div class="jumbotron">
         <h1 class="display-4"></h1>
@@ -124,9 +150,8 @@
     <h3>See what people have posted about your favorite games.</h3>
     <p>View other people's accomplishments from all over the world or post your own.</p>
   </div>
-  <div class="links"> 
-    <a href="/community/community.html">Join a community</a>
-  </div>
+    <a id='link' href="/community/community.html">Join a community</a>
+  
 </div>
 </body>
 </html>

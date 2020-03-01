@@ -1,0 +1,574 @@
+
+.jumbotron{
+    background-image: linear-gradient(#4caf50,black);
+    text-align: left;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 300px;
+}
+
+.body{
+    background-color: #222;
+    overflow-x: hidden;
+  }
+.column{
+    margin: auto;
+    float: left;
+}
+.fort{
+    position: relative;
+    left: 40px;
+    filter: grayscale();
+    transition: .5s ease-in-out;
+    height: 200px;
+    width: 200px;
+    border-radius: 75%;
+}
+
+.fortnitelogo{
+    position: relative;
+    opacity: 0;
+    left: -165px;
+    height: 200px;
+    width: 200px;
+}
+
+.r6logo{
+    position: relative;
+    opacity: 0;
+    right: 200px;
+    height: 100px;
+    width: 200px;
+}
+
+.rainbow{
+    filter: grayscale();
+    transition: .5s ease-in-out;
+    height: 200px;
+    width: 200px;
+    border-radius: 75%;
+}
+
+.lol{
+    filter: grayscale();
+    transition: .5s ease-in-out;
+    height: 200px;
+    width: 200px;
+    border-radius: 75%;
+}
+
+.lollogo{
+    position: relative;
+    opacity: 0;
+    right: 200px;
+    height: 100px;
+    width: 200px;
+}
+
+.destiny{
+    filter: grayscale();
+    transition: .5s ease-in-out;
+    height: 200px;
+    width: 200px;
+    border-radius: 75%;
+}
+
+.destinylogo{
+    position: relative;
+    opacity: 0;
+    left:-205px;
+    bottom: 0px;
+    height: 100px;
+    width: 210px;
+}
+
+
+.fortnite:hover .fort{
+    filter: grayscale(0%);
+    opacity: 50%;
+
+}
+
+.fortnite:hover .fortnitelogo{
+    filter: grayscale(0%);
+    opacity: 100%; 
+}
+
+.r6:hover .rainbow{
+    filter: grayscale(0%);
+    opacity: 50%;
+
+}
+
+.r6:hover .r6logo{
+    filter: grayscale(0%);
+    opacity: 100%; 
+}
+
+
+.league:hover .lol{
+    filter: grayscale(0%);
+    opacity: 50%;
+
+}
+
+.league:hover .lollogo{
+    filter: grayscale(0%);
+    opacity: 100%; 
+}
+
+
+.bungie:hover .destiny{
+    filter: grayscale(0%);
+    opacity: 50%;
+   
+
+}
+
+.bungie:hover .destinylogo{
+    filter: grayscale(0%);
+    opacity: 100%; 
+}
+
+
+.dot {
+    position: relative;
+    right: -27px;
+    bottom: -220px;
+    height: 225px;
+    width: 225px;
+    background-image: linear-gradient(#4caf50,#222);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot2 {
+    position: relative;
+    right: -167px;
+    bottom: -220px;
+    height: 225px;
+    width: 225px;
+    background-image: linear-gradient(#4caf50,#222);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot3 {
+    position: relative;
+    right: -345px;
+    bottom: -220px;
+    height: 225px;
+    width: 225px;
+    background-image: linear-gradient(#4caf50,#222);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot4 {
+    position: relative;
+    right: -525px;
+    bottom: -220px;
+    height: 225px;
+    width: 225px;
+    background-image: linear-gradient(#4caf50,#222);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+
+  .dot5 {
+    position: relative;
+    right: 890px;
+    bottom: -550px;
+    height: 225px;
+    width: 225px;
+    background-image: linear-gradient(#4caf50,#222);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot6 {
+    position: relative;
+    right: 750px;
+    bottom: -550px;
+    height: 225px;
+    width: 225px;
+    background-image: linear-gradient(#4caf50,#222);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot7 {
+    position: relative;
+    right: 168px;
+    bottom: -550px;
+    height: 225px;
+    width: 225px;
+    background-image: linear-gradient(#4caf50,#222);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot8 {
+    position: relative;
+    right: -800px;
+    bottom: -120px;
+    height: 225px;
+    width: 225px;
+    background-image: linear-gradient(#4caf50,#222);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot9 {
+    position: relative;
+    right: -27px;
+    bottom: -102px;
+    height: 225px;
+    width: 225px;
+    background-image: linear-gradient(#4caf50,#222);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot10 {
+    position: relative;
+    right: -156px;
+    bottom: -100px;
+    height: 225px;
+    width: 225px;
+    background-image: linear-gradient(#4caf50,#222);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot11 {
+    position: relative;
+    right: -336px;
+    bottom: -100px;
+    height: 225px;
+    width: 225px;
+    background-image: linear-gradient(#4caf50,#222);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot12 {
+    position: relative;
+    right: -535px;
+    bottom: -100px;
+    height: 225px;
+    width: 225px;
+    background-image: linear-gradient(#4caf50,#222);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+
+  .gta{
+    position: relative;
+    bottom: 100px;
+    left: 40px;
+    filter: grayscale();
+    transition: .5s ease-in-out;
+    height: 200px;
+    width: 200px;
+    border-radius: 75%;
+}
+
+.gtalogo{
+    position: relative;
+    bottom:100px;
+    opacity: 0;
+    left: -140px;
+    height: 150px;
+    width: 150px;
+}
+
+.gtav:hover .gta{
+    filter: grayscale(0%);
+    opacity: 50%;
+   
+
+}
+
+.gtav:hover .gtalogo{
+    filter: grayscale(0%);
+    opacity: 100%; 
+}
+
+.smash{
+    position: relative;
+    bottom:100px;
+    left: 50px;
+    filter: grayscale();
+    transition: .5s ease-in-out;
+    height: 200px;
+    width: 200px;
+    border-radius: 75%;
+}
+
+.smashlogo{
+    position: relative;
+    bottom:100px;
+    opacity: 0;
+    left: -145px;
+    height: 100px;
+    width: 170px;
+}
+
+.smashbros:hover .smash{
+    filter: grayscale(0%);
+    opacity: 50%;
+   
+
+}
+
+.smashbros:hover .smashlogo{
+    filter: grayscale(0%);
+    opacity: 100%; 
+}
+
+.rocket{
+    position: relative;
+    bottom:100px;
+    left: 75px;
+    filter: grayscale();
+    transition: .5s ease-in-out;
+    height: 200px;
+    width: 200px;
+    border-radius: 75%;
+}
+
+.rocketlogo{
+    position: relative;
+    bottom: 90px;
+    opacity: 0;
+    left: -105px;
+    height: 125px;
+    width: 150px;
+}
+
+.rocketleague:hover .rocket{
+    filter: grayscale(0%);
+    opacity: 50%;
+}
+
+.rocketleague:hover .rocketlogo{
+    filter: grayscale(0%);
+    opacity: 100%; 
+}
+
+.modern{
+    position: relative;
+    bottom:100px;
+    left: 125px;
+    filter: grayscale();
+    transition: .5s ease-in-out;
+    height: 200px;
+    width: 200px;
+    border-radius: 75%;
+}
+
+.modernlogo{
+    position: relative;
+    bottom: 100px;
+    opacity: 0;
+    left: -80px;
+    height: 150px;
+    width: 200px;
+}
+
+.cod:hover .modern{
+    filter: grayscale(0%);
+    opacity: 50%;
+}
+
+.cod:hover .modernlogo{
+    filter: grayscale(0%);
+    opacity: 100%; 
+}
+
+.column3{
+    margin: auto;
+    float: left;
+}
+
+
+
+.ark{
+    position: relative;
+    top: -120px;
+    left: 40px;
+    filter: grayscale();
+    transition: .5s ease-in-out;
+    height: 200px;
+    width: 200px;
+    border-radius: 75%;
+}
+
+.arklogo{
+    position: relative;
+    bottom: 115px;
+    opacity: 0;
+    left: -140px;
+    height: 150px;
+    width: 150px;
+}
+
+.arksurvival:hover .ark{
+    filter: grayscale(0%);
+    opacity: 50%;
+   
+
+}
+
+.arksurvival:hover .arklogo{
+    filter: grayscale(0%);
+    opacity: 1; 
+}
+
+.stardew{
+    position: relative;
+    top:-120px;
+    left: 40px;
+    filter: grayscale();
+    transition: .5s ease-in-out;
+    height: 200px;
+    width: 200px;
+    border-radius: 75%;
+}
+
+.stardewlogo{
+    position: relative;
+    bottom: 120px;
+    opacity: 0;
+    left: -155px;
+    height: 100px;
+    width: 170px;
+}
+
+.stardewvalley:hover .stardew{
+    filter: grayscale(0%);
+    opacity: 50%;
+   
+
+}
+
+.stardewvalley:hover .stardewlogo{
+    filter: grayscale(0%);
+    opacity: 100%; 
+}
+
+.pokemon{
+    position: relative;
+    top: -120px;
+    left: 70px;
+    filter: grayscale();
+    transition: .5s ease-in-out;
+    height: 200px;
+    width: 200px;
+    border-radius: 75%;
+}
+
+.pokemonlogo{
+    position: relative;
+    bottom: 125px;
+    opacity: 0;
+    left: -115px;
+    height: 150px;
+    width: 150px;
+}
+
+.pokemonshield:hover .pokemon{
+    filter: grayscale(0%);
+    opacity: 50%;
+}
+
+.pokemonshield:hover .pokemonlogo{
+    filter: grayscale(0%);
+    opacity: 100%; 
+}
+
+
+
+.animal{
+    position: relative;
+    top:-120px;
+    left: 140px;
+    filter: grayscale();
+    transition: .5s ease-in-out;
+    height: 200px;
+    width: 200px;
+    border-radius: 75%;
+}
+
+.animallogo{
+    position: relative;
+    bottom:120px;
+    opacity: 0;
+    left: -65px;
+    height: 150px;
+    width: 200px;
+}
+
+.animalcrossing:hover .animal{
+    filter: grayscale(0%);
+    opacity: 50%;
+}
+
+.animalcrossing:hover .animallogo{
+    filter: grayscale(0%);
+    opacity: 100%; 
+}
+
+
+header{
+    background: #222;
+  }
+  header::after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .logo{
+    left: 10px;
+    float: left;
+    border-radius: 75%;
+    padding: 10px 0;
+    width:100px;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .navbar{
+    float: right;
+  }
+  nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    position: relative;
+  }
+  nav a{
+    color: white;
+  }
+  nav ul a:hover{
+    color: #4caf50;
+    text-decoration: none;
+
+  }
+  nav ul a::before{
+    content:'';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #4caf50;
+    position: absolute;
+    top:0;
+    width:0%;
+    transition: all ease-in-out 250ms;
+  }
+  nav ul a:hover::before{
+    width: 100%;
+  }
