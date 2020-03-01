@@ -6,56 +6,267 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="stats.css">
+    
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-firestore.js"></script>
 
-  </head>
+
+
+   
+
+
+</head>
+<body class="body">
+
+    <header>
+        <div class="container">
+          <a href="/home/home.html">
+            <img src = "/home/Gameshack (1).png" alt="logo" class="logo"width="120 px" height="120 px">
+          </a>
+          <nav>
+        <div class ="text"> 
+          <ul>
+            <li><a href="/community/community.html">Communities</a></li>
+            <li><a href="/social/social.html">Social Page</a></li>
+            <li><a href="/stats/stats.html">Stats</a></li>
+          </ul>
+        </div>
+      </nav>
+      </div>
+    </header>
+   
+    
+
+    <div class="jumbotron">
+        <h1 class="display-4">Cards</h1>
+        <p class="lead">This is the dashboard for your cards to display all of your accomplishments</p>
+    </div>
+
+
+
+      
+    
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg">
+        <div class="o-card o-card--mod-small">
+            <div class="c-card">
+              
+              <img class="c-card_image" src="destiny.jpg" alt="Card Image">
+              <div class="c-card_body">
+                <h2 class="c-card_title">Destiny</h2>
+                <h5 class="c-card_secondary-title">FPS MMO</h5>
+                <hr>
+                <div class="content">
+
+                    <form id="add-card-form">
+                        <input type="text" name="name" placeholder="Accomplishment">
+                        <input type="text" name="city" placeholder="Description">
+                        <button id="submit">Add</button>
+                    </form>
+        
+                    <ul id="stat-list"></ul>
+        
+                </div>
+                
+                <div class="stats-card__unit-stats stats-card__unit-stats--barbarian clearfix">
+                    <div class="one-third">
+                      <div class="stat" id="raid">512</div>
+                      <div class="stat-value" >Raids Completed</div>
+                    </div>
+            
+                    <div class="one-third">
+                      <div class="stat" id="trials">15</div>
+                      <div class="stat-value">Flawless Runs Ran</div>
+                    </div>
+            
+                    <div class="one-third no-border">
+                      <span class="stat" id="riven">2342</span>
+                      <div class="stat-value">Riven Cheesed</div>
+                    </div>
+            
+             </div> 
+             </div> 
+    </div>
+    </div>
+    </div>
+      
+      <div class="col-sm">
+        <div class="o-card o-card--mod-small">
+            <div class="c-card">
+              <img class="c-card_image" src="callofduty.jpg" alt="Card Image">
+              <div class="c-card_body">
+                <h2 class="c-card_title">Call of Duty</h2>
+                <h5 class="c-card_secondary-title">FPS</h5>
+                <hr>
+                <div class="stats-card__unit-stats stats-card__unit-stats--barbarian clearfix">
+                    <div class="one-third">
+                      <div class="stat">1023</div>
+                      <div class="stat-value">Matches Won</div>
+                    </div>
+            
+                    <div class="one-third">
+                      <div class="stat">9.2</div>
+                      <div class="stat-value">K/D</div>
+                    </div>
+            
+                    <div class="one-third no-border">
+                      <div class="stat">1002</div>
+                      <div class="stat-value">Hours Played</div>
+                    </div>
+            
+             </div> 
+             </div> 
+    </div>
+    </div>
+    
+      </div>
+      <div class="col-sm">
+        <div class="o-card o-card--mod-small">
+            <div class="c-card">
+              <img class="c-card_image" src="smash.jpg" alt="Card Image">
+              <div class="c-card_body">
+                <h2 class="c-card_title">Smash Ultimate</h2>
+                <h5 class="c-card_secondary-title">Fighting</h5>
+                <hr>
+                <div class="stats-card__unit-stats stats-card__unit-stats--barbarian clearfix">
+                    <div class="one-third">
+                      <div class="stat">512</div>
+                      <div class="stat-value">Matches Won</div>
+                    </div>
+            
+                    <div class="one-third">
+                      <div class="stat">1312</div>
+                      <div class="stat-value">B button Mashed</div>
+                    </div>
+            
+                    <div class="one-third no-border">
+                      <div class="stat">3000</div>
+                      <div class="stat-value">Hours Played</div>
+                    </div>
+            
+             </div> 
+    </div>
+    </div>
+    
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="o-card o-card--mod-small">
+            <div class="c-card">
+              <img class="c-card_image" src="fortnite.png" alt="Card Image">
+              <div class="c-card_body">
+                <h2 class="c-card_title">Fortnite</h2>
+                <h5 class="c-card_secondary-title">Battle Royal</h5>
+                <hr>
+                <div class="stats-card__unit-stats stats-card__unit-stats--barbarian clearfix">
+                    <div class="one-third">
+                      <div class="stat">1</div>
+                      <div class="stat-value">Victory Royal</div>
+                    </div>
+            
+                    <div class="one-third">
+                      <div class="stat">18</div>
+                      <div class="stat-value">Highest Kill Game</div>
+                    </div>
+            
+                    <div class="one-third no-border">
+                      <div class="stat">201</div>
+                      <div class="stat-value">Hours Played</div>
+                    </div>
+            
+             </div> 
+             </div> 
+    </div>
+    </div>
+    </div>
+      
+      <div class="col-sm">
+        <div class="o-card o-card--mod-small">
+            <div class="c-card">
+              <img class="c-card_image" src="lol.jpg" alt="Card Image">
+              <div class="c-card_body">
+                <h2 class="c-card_title">League of Legends</h2>
+                <h5 class="c-card_secondary-title">MMO</h5>
+                <hr>
+                <div class="stats-card__unit-stats stats-card__unit-stats--barbarian clearfix">
+                    <div class="one-third">
+                      <div class="stat">312</div>
+                      <div class="stat-value">Matches Won</div>
+                    </div>
+            
+                    <div class="one-third">
+                      <div class="stat">1000</div>
+                      <div class="stat-value">Left Mouse Clicked</div>
+                    </div>
+            
+                    <div class="one-third no-border">
+                      <div class="stat">203</div>
+                      <div class="stat-value">Hours Played</div>
+                    </div>
+            
+             </div> 
+             </div> 
+    </div>
+    </div>
+    
+      </div>
+      <div class="col-sm">
+        <div class="o-card o-card--mod-small">
+            <div class="c-card">
+              <img class="c-card_image" src="six.jpg" alt="Card Image">
+              <div class="c-card_body">
+                <h2 class="c-card_title">Rainbow Six Siege</h2>
+                <h5 class="c-card_secondary-title">FPS </h5>
+                <hr>
+                
+        
+
+
+
+                <div class="stats-card__unit-stats stats-card__unit-stats--barbarian clearfix">
+                    
+                    <div class="one-third">
+                      <div class="stat">Gold</div>
+                      <div class="stat-value">Ranked</div>
+                    </div>
+            
+                    <div class="one-third">
+                      <div class="stat">1312</div>
+                      <div class="stat-value">B button Mashed</div>
+                    </div>
+            
+                    <div class="one-third no-border">
+                      <div class="stat">2013</div>
+                      <div class="stat-value">Hours Played</div>
+                    </div>
+            
+             </div> 
+             </div> 
+    </div>
+    </div>
+    
+      </div>
+    </div>
+  </div>
+
+
+
+
 
   
 
-   <body class="body">
-    
 
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="/home/home.css">Gaming Social</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="/social/social.html">Social Page <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/community/community.html">Communites </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/stats/stats.html">Cards</a>
-          </li>
-          
-        </ul>
-      </div>
-    </nav>
-
-
-
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Statistics</h1>
-          <p class="lead">Update your Cards</p>
-        </div>
-      </div>
-
-
-
-
-    
-
-
-
-
-
-
+<script src="stats.js"></script>
 </body>
-</html>
+  </html>
