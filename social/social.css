@@ -1,21 +1,27 @@
-.jumbotron{
-    background: linear-gradient(181deg, #029001,#333);
 
-    text-align: left;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 300px;
+.nav-item{
+  bottom: 6px;
+  position: relative;
+}
+.big-banner{
+  background-image: url('bruh.jpg');
+  background-size:100%;
+  text-align: left;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 300px;
 }
 .display-4{
-    color:#333;
-    font-family: "Times New Roman", Times, serif;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;    
     size: 5px;
     position: relative;
     bottom: 3px;
-    text-align: Center;
+    text-align: Left;
 }
 .lead{
     color:white;
+    text-align:Left;
 }
 body {
     background-color: #333;
@@ -23,8 +29,7 @@ body {
     padding: 0px;
   }
   
-    
-  }
+}
   ul{
     list-style-type: none;
     margin: 0;
@@ -38,40 +43,28 @@ body {
   li{
     float: left;
   }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration:none;
-  }
-  li a:hover:not(.active){
-    background-color: #111;
-    text-decoration: none;
-  }
-  .active{
-    background-color: #4caf50;
-  }
-  p{
-    font-family: Consolas;
-    text-align: center;
-  } 
+
   body {
     font-family: Arial;
-    padding: 20px;
     background: #f1f1f1;
   }
   .card {
+    color: #23272a;
     margin: 0 auto; /* Added */
     float: none; /* Added */
     margin-top: 60px; /* Added */
     border-radius: 50%;
-    box-shadow: 14px 28px rgba(0,0,0);
+    left:75px;
+    style: "background-color:#23272a";
+    transition: transform .2s;
 }
-  .card:hover{
-    box-shadow: 14px 28px rgba(44,100,44);
-  }
+.card-body{
+  
+}
+.card:hover{
+  position: relativ;
+  transform: scale(1.1);
+}
 img{
         border-radius: 50%;
     }
@@ -79,54 +72,16 @@ img{
     padding: 6px, 5px;
 }
 .Profile-Picture {
-    max-width:9%;
+    max-width:50%;
     max-height:50%;
   }
   .exuser{
     margin-bottom: 30px;
   }
-  .card-body{
-    border-color:red;
-  }
 
-
-  #card 1 {
-    margin: 0 auto; /* Added */
-    float: left; /* Added */
-    margin-top: 60px; /* Added */
-    border-radius: 50%;
-    box-shadow: 14px 28px rgba(0,0,0);
-}
-  #card 1:hover{
-    box-shadow: 14px 28px rgba(44,100,44);
-    
-  }
-  #card 2{
-    margin: 0 auto; /* Added */
-    float: left; /* Added */
-    margin-top: 60px; /* Added */
-    border-radius: 50%;
-    box-shadow: 14px 28px rgba(0,0,0);
-}
-  #card 2:hover{
-    box-shadow: 14px 28px rgba(44,100,44);
-  }
-  
   .row{
     margin:auto;
     float: left;
-  }
-  
-
-
-  header{
-    background: #222;
-    position: relative;
-  }
-  header::after{
-    content: '';
-    display: table;
-    clear: both;
   }
   .logo{
     left: 10px;
@@ -171,3 +126,4 @@ img{
   nav ul a:hover::before{
     width: 100%;
   }
+ 
