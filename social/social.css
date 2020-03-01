@@ -1,16 +1,173 @@
-.jumbotron-fluid{
-    background-color:purple;
-   height: 50px;
+.jumbotron{
+    background: linear-gradient(181deg, #029001,#333);
 
+    text-align: left;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 300px;
 }
 .display-4{
-    color: white;
+    color:#333;
     font-family: "Times New Roman", Times, serif;
-    size: 2px;
+    size: 5px;
     position: relative;
-    bottom: 11px;
-    text-align: left;
+    bottom: 3px;
+    text-align: Center;
 }
-.card w-50{
+.lead{
+    color:white;
+}
+body {
+    background-color: #333;
+    margin: 0px;
+    padding: 0px;
+  }
+  
     
-}           
+  }
+  ul{
+    list-style-type: none;
+    margin: 0;
+    position:fixed;
+    top:0;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  li{
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+  }
+  li a:hover:not(.active){
+    background-color: #111;
+    text-decoration: none;
+  }
+  .active{
+    background-color: #4caf50;
+  }
+  p{
+    font-family: Consolas;
+    text-align: center;
+  } 
+  body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+  }
+  .card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-top: 60px; /* Added */
+    border-radius: 50%;
+    box-shadow: 14px 28px rgba(0,0,0);
+}
+  .card:hover{
+    box-shadow: 14px 28px rgba(44,100,44);
+  }
+img{
+        border-radius: 50%;
+    }
+.card-title{
+    padding: 6px, 5px;
+}
+.Profile-Picture {
+    max-width:9%;
+    max-height:50%;
+  }
+  .exuser{
+    margin-bottom: 30px;
+  }
+  .card-body{
+    border-color:red;
+  }
+
+
+  #card 1 {
+    margin: 0 auto; /* Added */
+    float: left; /* Added */
+    margin-top: 60px; /* Added */
+    border-radius: 50%;
+    box-shadow: 14px 28px rgba(0,0,0);
+}
+  #card 1:hover{
+    box-shadow: 14px 28px rgba(44,100,44);
+    
+  }
+  #card 2{
+    margin: 0 auto; /* Added */
+    float: left; /* Added */
+    margin-top: 60px; /* Added */
+    border-radius: 50%;
+    box-shadow: 14px 28px rgba(0,0,0);
+}
+  #card 2:hover{
+    box-shadow: 14px 28px rgba(44,100,44);
+  }
+  
+  .row{
+    margin:auto;
+    float: left;
+  }
+  
+
+
+  header{
+    background: #222;
+    position: relative;
+  }
+  header::after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .logo{
+    left: 10px;
+    float: left;
+    border-radius: 75%;
+    padding: 10px 0;
+    width:100px;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .navbar{
+    float: right;
+  }
+  nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    position: relative;
+  }
+  nav a{
+    color: white;
+  }
+  nav ul a:hover{
+    color: #4caf50;
+    text-decoration: none;
+
+  }
+  nav ul a::before{
+    content:'';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #4caf50;
+    position: absolute;
+    top:0;
+    width:0%;
+    transition: all ease-in-out 250ms;
+  }
+  nav ul a:hover::before{
+    width: 100%;
+  }
