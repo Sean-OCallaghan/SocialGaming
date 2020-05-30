@@ -6,7 +6,7 @@
 .bportal{
     position: relative;
     bottom: 400px;
-    right:-30px;
+    right:-130px;
     width: 400px;
     height: 400px;
 }
@@ -14,14 +14,14 @@
 .oportal{
     position: relative;
     bottom: 910px;
-    right: -1100px;
+    right: -1200px;
     width:400px;
     height:400px;
 }
 
 .dot {
     position: relative;
-    right: -540px;
+    right: -640px;
     bottom: -10px;
     height: 425px;
     width: 425px;
@@ -32,7 +32,7 @@
 
   .dot2 {
     position: relative;
-    right: -125px;
+    right: -225px;
     bottom: 3px;
     height: 400px;
     width: 400px;
@@ -87,7 +87,7 @@
 
 .join{
     position: relative;
-    right: 320px;
+    right: 220px;
     bottom: 400px;
     width: 300px;
     height: 300px;
@@ -95,7 +95,7 @@
 
 .page{
     position: relative;
-    right: 90px;
+    right: -10px;
     bottom: 350px;
     width: 300px;
     height: 300px;
@@ -103,7 +103,7 @@
 
 .badges{
     position: relative;
-    right: -635px;
+    right: -735px;
     bottom: 830px;
     width: 600px;
     height: 600px;

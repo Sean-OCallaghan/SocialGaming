@@ -54,10 +54,6 @@ form.addEventListener('submit', (e) => {
             renderCard(doc);
     
     });
-      
-  
-         
-
     form.name.value = '';
     form.city.value = '';
 });
